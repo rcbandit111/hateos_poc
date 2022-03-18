@@ -1,0 +1,16 @@
+server:
+  port: 8000
+logging:
+  file:
+    name: ${java.io.tmpdir}/application.log
+  level:
+    com:
+      backend: DEBUG
+    org:
+      springframework: DEBUG
+      springframework.web: DEBUG
+spring:
+  application:
+    name: hateos-test
+  profiles:
+    active: dev
